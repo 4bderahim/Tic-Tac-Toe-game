@@ -72,7 +72,7 @@ def to_start():
         print("[!] Choose Y or N ")
         to_start()
 _start = to_start()
-def launch(case = False):
+def launch():
     while Game:
         print(game_map)
         gdf([playerinput("x"),"x"])
