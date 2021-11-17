@@ -19,7 +19,7 @@ NOONEWINS = [False, "\n\t\t\tNO ONE WINS !!!\n\n"]
 dicc = {}
 available_numbers = list(_n)
 
-def winermap(THE_WINNER:str):
+def winermap(THE_WINNER):
     global game_map
     THE_LOSER = o if THE_WINNER == x else x
     for i in game_map:
@@ -71,7 +71,7 @@ def to_start():
     else:
         print("[!] Choose Y or N ")
         to_start()
-oO = to_start()
+_start = to_start()
 def launch(case = False):
     while Game:
         print(game_map)
@@ -83,7 +83,7 @@ def launch(case = False):
         if NOONEWINS[0]:
             print(NOONEWINS[1])
             break
-        gdf([playerinput(oO),"o"])
+        gdf([playerinput(_start),"o"])
         if win("o") == True:
             print(f"\n\n\t\t {o} wins\t:)\n\n{game_map}")
             break
