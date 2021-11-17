@@ -89,4 +89,4 @@ def launch(case = False):
             break
 if __name__ == '__main__':
     launch()   
-input("\n\n\n PRESS ENTER TI EXIT..")
+input("\n\n\n PRESS ENTER TO EXIT..")
