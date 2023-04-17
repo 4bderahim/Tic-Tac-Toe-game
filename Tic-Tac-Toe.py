@@ -1,4 +1,3 @@
-#ITNOG
 import os
 import random
 import time
@@ -62,7 +61,7 @@ def gdf(ptype):
 
 Game = True
 def to_start():
-    rules = input("Play against a 'blind' COMPUTER? Yes , No  Y/N :")
+    rules = input("Play against a 'blind' COMPUTER! Yes or No ?  Y/N :")
     if rules.capitalize() =="Y":
         print("\n\n\tYOU : X\n\tTHE BLIND COMPUTER : O\n")
         return "y"
